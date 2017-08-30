@@ -12,7 +12,7 @@
 
 \title{Metodologia RUP}
 \author{Christian López \\ Thomas Muñoz \\ Flavio Pallini}
-\email{christian.lopeza@mail.udp.cl \\ thomas.munoz@mail.udp.cl }
+\email{christian.lopeza@mail.udp.cl \\ thomas.munoz@mail.udp.cl \\ flavio.pallini@mail.udp.cl}
 \date{29 de agosto de 2017}
 
 % Además podemos establecer la facultad y escuela
@@ -34,7 +34,7 @@ Por lo general, las metodologías de trabajo se basan en un conocimiento de las 
 
 \chapter{Explicación de Metodología}
 La metodología RUP es un proceso de desarrollo de software creado por \textit{Rational Software}, y actualmente propiedad de IBM. Es una de las metodologías de desarrollo de software más utilizadas para el análisis, implementación y documentación de sistemas orientados a objetos. Se caracteriza por no ser estática, sino compuesta por un conjunto de fases adaptables según la necesidad del cliente o avance del equipo de desarrollo.\par
-Esta metodología permite dividir el proceso de desarrollo en cuatro grandes fases donde cada una incluye modelamiento del negocio, análisis, diseño, construcción, pruebas e implantación.
+Esta metodología trabaja con iteraciones, haciendo a RUP una forma de desarrollo en espiral. Cada iteración incluye los roles que se van a ver involucrados, las labores que se van a realizar, y el subproducto que van a producir. Sin embargo, estas iteraciones se diseñan tal que puedan dividir el proceso de desarrollo en cuatro grandes fases, donde cada una incluye en mayor o menor medida el modelamiento del negocio, análisis, diseño, construcción, pruebas e implantación. Lo que esto permite es un desarrollo maleable donde nuevos desafíos o requerimientos pueden ser adheridos al proyecto, y donde el producto final necesariamente debe haber sido compuesto por, y probado como, componentes interdependientes, lo cual permite probar más de cerca la calidad del código.
 
 \section{¿Por qué utilizar RUP?}
 \label{sec: Por que utilizar RUP}
@@ -93,8 +93,13 @@ El objectivo de la fase de construccion es aclarar lo requisitos restantes y com
 En esta fase sespone el énfasis en la gestion de los recursos y el control de la operaciones para poder optimizar los costes, la planificacion y la calidad.\par
 
 \subsection{Fase de Transición}
-En esta fase se garantiza que el software este diponicle para los usuarios finales, ademas se puede acarrear varias iteraciones e incluye las pruebas del producto en preparación para el release, asi como los ajustes menores basados en la informacion obtenida de los usuarios que han probado el software.\par
+En esta fase se garantiza que el software este diponible para los usuarios finales, ademas se puede acarrear varias iteraciones e incluye las pruebas del producto en preparación para el release, asi como los ajustes menores basados en la informacion obtenida de los usuarios que han probado el software.\par
 En este momento del ciclo vital, la informacion recibida de los usuarios debe centrarse especialmente en el ajuste del producto, las cuestiones de configuracion, instalacion y utilización.
+
+\section{Desventajas de RUP}
+Siendo una metodología iterativa donde cada iteración tiene un grado significativo de independencia, las principales desventajas de RUP tienen que ver con la integración de todas las iteraciones en un proyecto coherente. En particular, se debe poner atención especial en compatibilizar los procesos y tecnologías de cada componente entre sí. Asimismo, si bien es conveniente evaluar la calidad de los componentes por separado, no se puede obviar el control de calidad del producto completo, gracias al problema de compatibilización ya mencionado.
+Dependiendo de la granularidad de las iteraciones contra el alcance del proyecto, trabajar con RUP puede ser más desorganizado que otras metodologías. Si bien son claras las fases de RUP y éstas otorgan un nivel de orden, existen varios proyectos que no se pueden subdividir tan óptimamente. Similarmente, esto puede llevar a una construcción más difícil que con otras metodologías.
+Finalmente, y como detalle final, dividir el trabajo de esta forma puede complejizar la documentación.
 
 \chapter{Aplicación en Canchapp}
 
